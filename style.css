@@ -1,0 +1,65 @@
+
+body {
+  background-color:#181818;
+  background-image: url("img/64.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+@font-face {
+  font-family: 'C64';
+  src:  url('text/Commodore-64-v6.3.ttf');
+}
+
+@font-face {
+  font-family: 'C64-r';
+  src:  url('text/Commodore-Rounded-v1.2.ttf');
+}
+
+#header img{
+    margin: auto;
+    margin-top: 5%;
+	display: block;
+    width: 70%;
+    height: 70%;
+}
+
+#main{
+    color: white;
+    text-align: center;
+    text-shadow:rgba(0, 0, 0, 0.3) 0 1px 3px;
+}
+
+.header-title{
+    font-family: 'C64';
+    font-size: 2em;
+}
+
+.info {
+    font-family: 'C64-r';
+}
+
+.screen {
+    background-color: #4449de;
+    opacity: 0.95;
+    font-family: C64;
+    text-align: center;
+    margin: 5% 10% 10% 10%;
+    padding: 5px 2% 0 2%;
+    font-size: 2em;
+    z-index: 1;
+    height: 500px;
+    color: white;
+}
+
+.ready{
+    text-align: left;
+}
+
+@media only screen and (max-width: 500px) {
+    .screen {
+        font-size: 1em;
+    }
+}
