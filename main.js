@@ -10,13 +10,18 @@ $(document).ready(function(){
             inputText = inputText.replace(/\s/g, ''); //getting rid of Spaces
             console.log(inputText);
             if (inputText == "background"){
-                
+
                 $("#main .Background").appendTo(".element");
                 $('input[name=textInput]').val("")
             }
             else if (inputText == "commands"){
 
                 $("#main .Commands").appendTo(".element");
+                $('input[name=textInput]').val("")
+            }
+            else if (inputText == "c"){
+
+                $("#main .c").appendTo(".element");
                 $('input[name=textInput]').val("")
             }
             else if (inputText == "screen"){
