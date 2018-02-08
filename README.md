@@ -2,6 +2,6 @@
 
 ### Group Members
 
-#### Markus Hudobnik
-#### Olivia Pulick
-#### Cassandra Goodby
+##### Markus Hudobnik
+##### Olivia Pulick
+##### Cassandra Goodby
