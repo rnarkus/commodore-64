@@ -42,20 +42,43 @@ body {
 }
 
 .screen {
+    position:relative;
     background-color: #4449de;
     opacity: 0.95;
     font-family: C64;
-    text-align: center;
+    color: white;
     margin: 5% 10% 10% 10%;
     padding: 5px 2% 0 2%;
     font-size: 2em;
     z-index: 1;
-    height: 500px;
-    color: white;
+
+
+}
+.populate {
+
+    text-align: center;
 }
 
-.ready{
+.element{
     text-align: left;
+
+}
+
+.input-form{
+
+    bottom:0;
+    background-color:rgba(0, 0, 0, 0);
+    color:white;
+    border: none;
+    outline:none;
+    height:50px;
+    font-size: 1em;
+    transition:height 1s;
+    -webkit-transition:height 1s;
+    font-family: 'C64';
+    margin-bottom: 20px;
+    margin-top: 20px;
+
 }
 
 @media only screen and (max-width: 500px) {

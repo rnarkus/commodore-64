@@ -1,10 +1,20 @@
-$(function(){
-   $(document).on('keydown keyup','#text',function(){
-     var t = $(this).text();
-     $('#text-shadow1, #text-shadow2').text(t);
-   });
-  setInterval(function(){
-    var t = $('#text').text();
-    $('#text-shadow1, #text-shadow2').text(t);
-  },1);
+
+
+$(document).ready(function(){
+    $( ".input-form" ).focus();
+    $(document).keypress(function(e){
+        if(e.which == 13) {
+            var inputText = $('input[name=textInput]').val();
+            if (inputText == "Background"){
+                $("#main .Background").appendTo(".element");
+                $('input[name=textInput]').val("")
+            }
+            if (inputText == "Commands"){
+
+                $("#main .Commands").appendTo(".element");
+                $('input[name=textInput]').val("")
+            }
+
+        };
+    });
 });
