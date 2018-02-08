@@ -2,6 +2,7 @@
 
 $(document).ready(function(){
     $( ".input-form" ).focus();
+    $("main").hide();
     $(document).keypress(function(e){
         if(e.which == 13) {
             var inputText = $('input[name=textInput]').val();
