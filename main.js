@@ -1,5 +1,4 @@
 $(document).ready(function(){
-    var count=0;
     $( ".input-form" ).focus();
     $("main").hide();
     $(document).keypress(function(e){
@@ -8,10 +7,9 @@ $(document).ready(function(){
             inputText = inputText.toLowerCase();
             inputText = inputText.replace(/\s/g, ''); //getting rid of Spaces
             $( "#main div" ).each(function() {
-                var name= $(this).attr("class")
-                if ( name== inputText ){
+                var name = $(this).attr("class");
+                if ( name == inputText ){
                     $("#main ."+name).appendTo(".element");
-                    console.log($(".element").html());
                 };
             });
             $('input[name=textInput]').val("");

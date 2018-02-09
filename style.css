@@ -1,3 +1,12 @@
+@font-face {
+  font-family: 'C64';
+  src:  url('text/Commodore-64-v6.3.ttf');
+}
+
+@font-face {
+  font-family: 'C64-r';
+  src:  url('text/Commodore-Rounded-v1.2.ttf');
+}
 
 body {
   background-color:#181818;
@@ -12,18 +21,9 @@ body {
 h1, h3, h4{
   font-size: 1.0em;
 }
+
 h2{
   font-size: 1.3em;
-}
-
-@font-face {
-  font-family: 'C64';
-  src:  url('text/Commodore-64-v6.3.ttf');
-}
-
-@font-face {
-  font-family: 'C64-r';
-  src:  url('text/Commodore-Rounded-v1.2.ttf');
 }
 
 #header img{
@@ -40,40 +40,27 @@ h2{
     text-shadow:rgba(0, 0, 0, 0.3) 0 1px 3px;
 }
 
-.header-title{
-    font-family: 'C64';
-    font-size: 2em;
-}
-
-.info {
-    font-family: 'C64-r';
-}
-
 .screen-64 {
     position:relative;
     background-color: #4449de;
     opacity: 0.95;
-    font-family: C64;
+    font-family: 'C64';
     color: white;
     margin: 5% 10% 10% 10%;
     padding: 5px 2% 0 2%;
     font-size: 2em;
     z-index: 1;
-
-
 }
-.populate {
 
+.populate {
     text-align: center;
 }
 
 .element{
     text-align: left;
-
 }
 
 .input-form{
-
     bottom:0;
     background-color:rgba(0, 0, 0, 0);
     color:white;
@@ -86,7 +73,6 @@ h2{
     font-family: 'C64';
     margin-bottom: 20px;
     margin-top: 20px;
-
 }
 
 @media only screen and (max-width: 500px) {
