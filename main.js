@@ -1,6 +1,5 @@
-
-
 $(document).ready(function(){
+    var count=0;
     $( ".input-form" ).focus();
     $("main").hide();
     $(document).keypress(function(e){
@@ -8,58 +7,14 @@ $(document).ready(function(){
             var inputText = $('input[name=textInput]').val();
             inputText = inputText.toLowerCase();
             inputText = inputText.replace(/\s/g, ''); //getting rid of Spaces
-            console.log(inputText);
-            if (inputText == "background"){
-
-                $("#main .Background").appendTo(".element");
-                $('input[name=textInput]').val("")
-            }
-            else if (inputText == "commands"){
-
-                $("#main .Commands").appendTo(".element");
-                $('input[name=textInput]').val("")
-            }
-            else if (inputText == "c"){
-
-                $("#main .c").appendTo(".element");
-                $('input[name=textInput]').val("")
-            }
-            else if (inputText == "screen"){
-
-                $("#main .Screen").appendTo(".element");
-                $('input[name=textInput]').val("")
-            }
-            else if (inputText == "cassettetapes"){
-
-                $("#main .cassettetapes").appendTo(".element");
-                $('input[name=textInput]').val("")
-            }
-            else if (inputText == "floppydisk"){
-
-                $("#main .floppydisk").appendTo(".element");
-                $('input[name=textInput]').val("")
-            }
-            else if (inputText == "instructions"){
-
-                $("#main .instructions").appendTo(".element");
-                $('input[name=textInput]').val("")
-            }
-            else if (inputText == "waittime"){
-
-                $("#main .waittime").appendTo(".element");
-                $('input[name=textInput]').val("")
-            }
-            else if (inputText == "accessories"){
-
-                $("#main .accessories").appendTo(".element");
-                $('input[name=textInput]').val("")
-            }
-            else{
-                $("#main .error").appendTo(".element");
-                $('input[name=textInput]').val("")
-            }
-
-
+            $( "#main div" ).each(function() {
+                var name= $(this).attr("class")
+                if ( name== inputText ){
+                    $("#main ."+name).appendTo(".element");
+                    console.log($(".element").html());
+                };
+            });
+            $('input[name=textInput]').val("");
         };
     });
 });

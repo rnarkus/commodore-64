@@ -49,7 +49,7 @@ h2{
     font-family: 'C64-r';
 }
 
-.screen {
+.screen-64 {
     position:relative;
     background-color: #4449de;
     opacity: 0.95;
