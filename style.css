@@ -25,6 +25,10 @@ h1, h3, h4{
 h2{
   font-size: 1.3em;
 }
+ul li{
+  list-style: none;
+  padding: 5px;
+}
 
 #header img{
     margin: auto;
