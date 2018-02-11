@@ -26,81 +26,93 @@
 
         </section>
         <main id="main">
-            <div class="background">
-                <h2>Background</h2>
-                <h3>Who were the users?</h3>
-                <ul>
-                    <li>Business people</li>
-                    <li>Gamers</li>
-                    <li>Computer Hobbyists</li>
-                </ul>
-                <h3>What were their goals? </h3>
-                <ul>
-                    <li>Gaming Machine</li>
-                    <li>High-end Computer</li>
-                </ul>
+            <!--
+                Set up like "background". Two divs with class="item"
+                within a div with class="content" and id="name of command"
+                should populate using flex box.
 
-                <h3>What was the intended context or environment of this technology?</h3>
-                <p>Supports two high-resolution graphic modes, smooth scrolling, "sprites", bit mapping, character collision resolution and character mapped graphics, and three channels of complex sound. Excellent game machine with thousands of software titles release and various peripherals to extend its capabilities. </p>
-                <h3>What was unique or new about it? </h3>
-                <p>Had new versions of the SID, VIC, and I/O chips, The vore voltage was reduced from 12V to 9V, Printed on the top of keys were the graphic symbols</p>
-                <h3>Who developed the technology and what was their story?</h3>
-                <p>Commodore International, January 1982 first shown at the Consumer Electronics Show, in Las Vegas, January 7–10, 1982 Volume production started in early 1982, marketing in August for US$595 (equivalent to $1,509 in 2017). Commodore produced many of its parts in-house to control costs, including custom integrated circuit chips from MOS Technology. It has been compared to the Ford Model T automobile for its role in bringing a new technology to middle-class households via creative and affordable mass-production. In 2011, 17 years after it was taken off the market, research showed that brand recognition for the model was still at 87%, Commodore International founded by Jack Tramiel, in 1954, Eventually the company went bankrupt
-                </p>
-                <h3>What was the reaction by the general public?</h3>
-                <p>The best selling computer in history, Sold both in stores like toys-r-us, but also in professional computer stores, 10 and 17 million units, People enjoyed that they didn’t have to buy a monitor for it</p>
-            </div>
-            <div class="c">
-                <p>-background</p>
+                If its a title with no picture, "left-a" as a class after content.
+                should look like this: div class="content left-a"
 
-                <p>-commands</p>
-                <ul>
-                    <li>CLR - deletes all variables</li>
-                    <li>LOAD"*",8 - loads the first file if LOAD is called the first time or the last loaded file</li>
-                    <li>LOAD"*"8,1 - the program will be loaded absolute</li>
-                    <li>END - will end the BASIC program</li>
-                    <li>INPUT - is used for data input for BASIC programs</li>
-                    <li>PRINT - used to print data onto screen</li>
-                    <li>OPEN - is used for opening a logical file or peripheral device</li>
-                </ul>
-                <p>-screen</p>
-                <p>-cassettetapes</p>
-                <p>-floppydisk</p>
-                <p>-instructions</p>
-                <p>-waittime</p>
-                <p>Depend on which pr</p>
-                <p>-accessories</p>
-                <p>-error</p>
+                add this line: <div class="item"><img class="inline-img" src="img/1.jpg" alt=""></div>
+                if you want to add an image, make sure to change the src
+            -->
+            <div class="start">
+                <img class="inline-img" src="img/1.jpg" alt="">
             </div>
-            <div class="commands">
+            <div class="content" id="background">
+                <div class="item">
+                    <h2>Background</h2>
+                    <h3>Users and Goals</h3>
+                    <ul>
+                        <li>Business people</li>
+                        <li>Gamers</li>
+                        <li>Computer Hobbyists</li>
+                    </ul>
+                </div>
+
+                <div class="item"><img class="inline-img" src="img/1.jpg" alt=""></div>
+            </div>
+            <div class="content left-a" id="c">
+                <div class="item">
+                    <p>-background</p>
+
+                    <p>-commands</p>
+                    <ul>
+                        <li>CLR - deletes all variables</li>
+                        <li>LOAD"*",8 - loads the first file if LOAD is called the first time or the last loaded file</li>
+                        <li>LOAD"*"8,1 - the program will be loaded absolute</li>
+                        <li>END - will end the BASIC program</li>
+                        <li>INPUT - is used for data input for BASIC programs</li>
+                        <li>PRINT - used to print data onto screen</li>
+                        <li>OPEN - is used for opening a logical file or peripheral device</li>
+                    </ul>
+                    <p>-start</p>
+                    <p>-screen</p>
+                    <p>-cassettetapes</p>
+                    <p>-floppydisk</p>
+                    <p>-instructions</p>
+                    <p>-waittime</p>
+                    <p>Depend on which pr</p>
+                    <p>-accessories</p>
+                    <p>-error</p>
+            </div>
+            </div>
+            <div class="content" id="commands">
                 <h2>Commands</h2>
                 <p>Info</p>
             </div>
-            <div class="screen">
+            <div class="content" id="screen">
                 <h2>Screen</h2>
                 <p>Info</p>
             </div>
-            <div class="cassettetapes">
+            <div class="content" id="cassettetapes">
                 <h2>Cassette Tapes</h2>
                 <p>Info</p>
             </div>
-            <div class="floppydisk">
-                <h2>Floppy disk</h2>
-                <p>Info</p>
+            <div class="content" id="floppydisk">
+                <div class="item">
+                    <h2>Floppy disk</h2>
+                    <p>Info</p>
+                </div>
+
+                <div class="item">
+                    <iframe class="inline-img" src="https://player.vimeo.com/video/255275088" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                </div>
             </div>
-            <div class="instructions">
+            <div class="content" id="instructions">
                 <h2>Instructions</h2>
                 <p>Info</p>
             </div>
-            <div class="waittime">
+            <div class="content" id="waittime">
                 <h2>Wait Time</h2>
                 <p>Info</p>
             </div>
-            <div class="accessories">
+            <div class="content" id="accessories">
                 <h2>Accessories</h2>
                 <p>Info</p>
             </div>
-            <div class="error">
+            <div class="content" id="error">
                 <h3>?Syntax Error</h3>
                 <h3>Ready.</h3>
             </div>

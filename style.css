@@ -26,7 +26,37 @@ h2{
   font-size: 1.3em;
 }
 
-#header img{
+.content{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-flex-direction: row;
+    -moz-box-flex-direction: row;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    height:100%;
+    /*background-color: lightblue;*/
+}
+
+.left-a .item{
+    width:100%;
+}
+
+.item{
+    margin: auto;
+    height:50%;
+    width:50%;
+}
+
+.inline-img {
+    width: 100%;
+    flex-grow:0;
+    flex-shrink:0;
+
+}
+
+#header .title{
     margin: auto;
     margin-top: 5%;
 	display: block;
