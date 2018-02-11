@@ -4,7 +4,9 @@ $(document).ready(function(){
     $( ".input-form" ).focus();
     $("main").hide();
     $( "#main .content" ).each(function() {
-        arr.push($(this).attr("id"));
+        var nameAtt = $(this).attr("id")
+        arr.push(nameAtt);
+        $("#commands-64").append("<p>-"+nameAtt+"</p>");
     });
     $(document).keypress(function(e){
         if(e.which == 13) {
