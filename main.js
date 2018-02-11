@@ -13,7 +13,10 @@ $(document).ready(function(){
             $(".element").html("");
             var inputText = $('input[name=textInput]').val();
             if (inputText == "" && count <= arr.length){
-                $("#main #"+arr[count]).appendTo(".element");
+                $(".element").append($("#main #"+arr[count]).clone());
+                if (count==arr.length){
+                    count=0;
+                }
                 count++;
             }
             inputText = inputText.toLowerCase();
@@ -21,7 +24,7 @@ $(document).ready(function(){
             $( "#main .content" ).each(function() {
                 var name = $(this).attr("id");
                 if ( name == inputText ){
-                    $("#main #"+name).appendTo(".element");
+                    $(".element").append($("#main #"+name).clone());
                 }
             });
             $('input[name=textInput]').val("");
