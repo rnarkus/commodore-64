@@ -1,9 +1,9 @@
 $(document).ready(function(){
     var count=0;
     var arr= [];
-    $( ".input-form" ).focus();
-    $("main").hide();
-    $( "#main .content" ).each(function() {
+    $( ".input-form" ).focus(); //focuses the inputform
+    $("main").hide(); //hides main content
+    $( "#main .content" ).each(function() { //
         var nameAtt = $(this).attr("id")
         arr.push(nameAtt);
         $("#commands-64").append("<p>-"+nameAtt+"</p>");
