@@ -10,7 +10,8 @@ $(document).ready(function(){
     });
     $(document).keypress(function(e){
         if(e.which == 13) {
-            $(window).scrollTop($('.screen-64').offset().top);
+            var $screen = $('.screen-64');
+            //$(window).scrollTop($screen.offset().top - ($(window).height() - $screen.outerHeight(true)) / 2)
             $(".element").html("");
             var inputText = $('input[name=textInput]').val();
             if (inputText == "" && count <= arr.length){
@@ -28,6 +29,9 @@ $(document).ready(function(){
                     $(".element").append($("#main #"+name).clone());
                 }
             });
+            $('html, body').animate({
+                scrollTop: $screen.offset().top - ($(window).height() - $screen.outerHeight(true)) / 2
+            }, 200);
             $('input[name=textInput]').val("");
         };
     });
