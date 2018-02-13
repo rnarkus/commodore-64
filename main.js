@@ -10,6 +10,7 @@ $(document).ready(function(){
     });
     $(document).keypress(function(e){
         if(e.which == 13) {
+            $(window).scrollTop($('.screen-64').offset().top);
             $(".element").html("");
             var inputText = $('input[name=textInput]').val();
             if (inputText == "" && count <= arr.length){
