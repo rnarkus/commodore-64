@@ -26,7 +26,7 @@ h2{
   font-size: 1.3em;
 }
 ul li{
-  list-style: none;
+  line-height: 40px;
   padding: 5px;
 }
 
@@ -59,6 +59,13 @@ ul li{
     flex-shrink:0;
 
 }
+
+.inline-img-1{
+    width: 60%;
+    padding-left: 20%;
+}
+
+
 
 #header .title{
     margin: auto;
@@ -107,6 +114,11 @@ ul li{
     font-family: 'C64';
     margin-bottom: 20px;
     margin-top: 20px;
+}
+
+.inline-img {
+    padding-left: 2px;
+    padding-right: 2px;
 }
 
 @media only screen and (max-width: 500px) {
