@@ -19,11 +19,11 @@ body {
 }
 
 h1, h3, h4{
-  font-size: 1.0em;
+  font-size: 0.8em;
 }
 
 h2{
-  font-size: 1.3em;
+  font-size: 1.0em;
 }
 ul li{
   line-height: 40px;
@@ -52,6 +52,8 @@ ul li{
     flex-direction: row;
     height:100%;
     align-items: center;
+    hyphens: auto;
+    line-height: 40px;
 
     /*background-color: lightblue;*/
 }
@@ -69,11 +71,24 @@ ul li{
 
 }
 
+h2{
+    top: 0;
+    left: 0;
+}
+
 .inline-img {
-    width: 100%;
+    width: 80%;
+    height: 80%;
     flex-grow:0;
     flex-shrink:0;
 
+}
+
+iframe{
+    width: 90%;
+    height: 90%;
+    flex-grow:0;
+    flex-shrink:0;
 }
 
 .inline-img-1{
